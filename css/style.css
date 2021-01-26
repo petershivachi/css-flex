@@ -16,6 +16,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
 /* Utilities */
@@ -30,6 +31,14 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  border: none;
+  padding: 0.6rem 2rem;
+  color: #fff;
+}
+
 #navbar {
   display: flex;
   background: #333;
@@ -37,6 +46,7 @@ a {
   padding: 1rem;
   z-index: 1;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 #navbar ul {
@@ -54,4 +64,37 @@ a {
 #navbar ul li a:hover{
   background-color: var(--primary-color);
   border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #444 url(../img/showcase.jpg)no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+}
+
+#showcase .showcase-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#showcase .showcase-content h1{
+  font-size: 4rem;
+  line-height: 1.1;
+  padding-bottom: 0.75rem;
+}
+
+#showcase .showcase-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
