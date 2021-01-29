@@ -13,3 +13,28 @@ function initMap(){
   //The marker positioned at location
   const marker = new google.maps.Map({ position: loc, map: map });
 }
+
+//sticky navbar backgrund
+window.addEventListener('scroll', function(){
+  if (window.scrollY > 150) {
+    document.getElementById('navbar').style.opacity = 0.9;
+  } else {
+    document.getElementById('navbar').style.opacity = 1;
+  }
+})
+
+//Smooth Scrolling
+$('#navbar a, .btn').on('click', function(event){
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 100
+      },
+      1000
+    );
+  }
+});
