@@ -4,7 +4,7 @@
 :root {
   --primary-color: #1194ff;
   --secondary-color: #1151ff;
-  --dark-color: #1121ff;
+  --dark-color: #333;
   --light-color: #ffffffc2;
 }
 
@@ -38,6 +38,12 @@ a {
 
 .bg-light {
   background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-dark {
+  background-color: var(--dark-color) ;
+  color: #fff;
 }
 
 .text-primary{
@@ -56,7 +62,7 @@ a {
 
 .m-heading {
   font-size: 2rem;
-  padding: 0.8rem;
+  padding: 0.6rem;
   line-height: 1.1rem;
 }
 
@@ -64,6 +70,10 @@ a {
 .py-1 { padding: 1.5rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
 
 
 .btn {
@@ -74,6 +84,29 @@ a {
   color: #fff;
 }
 
+/* List */
+.list{
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.list li {
+  border-bottom: #444 1px dotted;
+  margin: 0.5rem 0;
+}
+
+/*Card*/
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+
+/* Navbar */
 #navbar {
   display: flex;
   background: #333;
@@ -153,3 +186,34 @@ a {
   border-radius: 50%;
   margin-bottom: 0.5rem;
 }
+
+/* Section: What We Do */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+
+#who .who-img {
+  background: #444 url('../img/about.jpg')no-repeat center center/cover;
+}
+
+
+/* Section: clients */
+#clients .m-heading {
+  text-align: center;
+}
+
+#clients .items{
+  display: flex;
+  padding-top: 1rem;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+}
+
