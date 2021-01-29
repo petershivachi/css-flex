@@ -34,6 +34,7 @@ a {
 
 .bg-primary{
   background-color: var(--primary-color);
+  color: #fff;
 }
 
 .bg-light {
@@ -81,6 +82,11 @@ a {
   background: var(--primary-color);
   border: none;
   padding: 0.6rem 2rem;
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
   color: #fff;
 }
 
@@ -217,3 +223,31 @@ a {
   margin: auto;
 }
 
+/* Section: Contact */
+#contacts {
+  display: flex;
+}
+
+#contacts .contact-form, #contacts .map {
+  flex: 1;
+} 
+
+#contacts .form-group{
+  margin: 0.75rem;
+}
+
+#contacts .form-group label {
+  display: block;
+}
+
+#contacts .form-group input,
+#contacts .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: #eee solid 1px;
+}
+
+#contacts .form-group input:focus,
+#contacts .form-group textarea:focus {
+  outline: none;
+}
